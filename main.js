@@ -1,4 +1,3 @@
-// module.exports = 
 function sum(num) {
   if (num==1) {return 1}
   let f1 = 1;
@@ -14,4 +13,7 @@ function sum(num) {
   return res;
 }
 
-console.log(sum(10)); //sum(10) should be = 10: 1 1 (2) 3 5
+function call_sum_all_odd_fibo(input) {
+  let result = sum(Number(input));
+  document.getElementById('result').innerHTML = input+" : "+result;
+}
